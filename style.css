@@ -1,3 +1,4 @@
+/* ESERCIZIO 1 */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -11,7 +12,7 @@
     background-color: red; 
 }
 
-
+/* ESERCIZIO 2 */
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -26,7 +27,7 @@
 
 }
 
-
+/* ESERCIZIO 3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -40,36 +41,97 @@
     border-radius: 50%;
 }
 
+/* ESERCIZIO 4 */
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
     opacity: 1;
-    transition: opacity 4s;
+    transition: opacity 2s;
 }
 
 /* soluzione 4 */
-
 .ex-4-square:hover {
     opacity: 0;
 }
 
 
-
+/* ESERCIZIO 5 */
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
-}
-.ex-6-img, .ex-7-img, .ex-8-img {
-    width: 500px;
+    transition: width 2s;
 }
 
+/* soluzione 5 */
+.ex-5-square:hover{
+    transform: scale(1.3);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+
+/* ESERCIZIO 6 */
+.ex-6-img, .ex-7-img {
+    width: 500px;
+    filter: invert(0);
+    transition: filter;
+}
+
+/* soluzione 6 */
+.ex-6-img:hover {
+    filter: invert(1);
+}
+
+/* soluzione 7 */
+.ex-7-img{
+    transition: filter 2s;
+
+}
+
+.ex-7-img:hover {
+    filter: invert(1) blur(3px);
+}
+
+/* soluzione 8 */
+.ex-8-img{
+    width: 500px;
+    border-radius: 0px;
+    filter: saturate(none) grayscale(none);
+    transition: filter border-radius;
+    transition-duration: 5s;
+}
+
+.ex-8-img:hover {
+    border-radius: 15px;
+    filter: saturate(30%) grayscale(20%);
+
+}
+
+
+/* ESERCIZIO 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    border-radius: 0;
+    filter: "";
+    transform: scale(1);
+    transition: border-radius filter transform;
+    transition-duration: 3s;
 }
+
+/* soluzione 9 */
+.ex-9-img:hover{
+    border-radius: 15px;
+    filter: contrast(20%) grayscale(40%);
+    transform: scale(1.5);
+}
+
+/* ESERCIZIO 10 */
 .ex-10-icon {
     font-size: 60px;
 }
