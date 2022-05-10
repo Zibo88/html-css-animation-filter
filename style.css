@@ -135,7 +135,7 @@
 .ex-10-icon {
     font-size: 60px;
     transform: rotate(0deg);
-    animation: transform;
+    animation: transform-spin;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -143,7 +143,7 @@
 }
 
 /* soluzione 10 */
-@keyframes transform {
+@keyframes transform-spin {
 
     0%{
         transform: rotate(0deg);
@@ -250,13 +250,13 @@
 
 /* soluzione 12 */
 
-.ex-12-top-white:hover{
+.ex-12-button:hover .ex-12-top-white{
     animation-name: left;
     animation-duration: 3s;
 }
 
 
-.ex-12-bottom-white:hover {
+.ex-12-button:hover .ex-12-bottom-white  {
     animation-name: right;
     animation-duration: 3s;
 }
