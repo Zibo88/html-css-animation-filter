@@ -135,53 +135,24 @@
 .ex-10-icon {
     font-size: 60px;
     transform: rotate(0deg);
-    animation-name: transform;
-    animation-duration: 1s;
+    animation: transform;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 
 }
 
 /* soluzione 10 */
 @keyframes transform {
-    0% {
+
+    0%{
         transform: rotate(0deg);
     }
 
-    10%{
-        transform: rotate(45deg);
-    }
-
-    20% {
-        transform: rotate(90deg);
-    }
-
-    30% {
-        transform: rotate(130deg);
-    }
-
-    40% {
-        transform: rotate(180deg);
-    }
-
-    50% {
-        transform: rotate(220deg);
-    }
-
-    60%{
-        transform: rotate(250deg);
-    }
-
-    80%{
-        transform: rotate(300deg);
-    }
-
-    90% {
-        transform: rotate(330deg);
-    }
-
-    100%{
+    100% {
         transform: rotate(360deg);
     }
+    
 }
 
 
@@ -191,6 +162,7 @@
     transform: rotate();
     animation-name: transform;
     animation-duration: 2s;
+    animation-timing-function: linear;
     
 }
 
@@ -264,6 +236,8 @@
     text-align: center;
     text-decoration: none;
 }
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -271,7 +245,57 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+
 }
+
+/* soluzione 12 */
+
+.ex-12-top-white:hover{
+    animation-name: left;
+    animation-duration: 3s;
+}
+
+
+.ex-12-bottom-white:hover {
+    animation-name: right;
+    animation-duration: 3s;
+}
+
+@keyframes left { 
+
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    100% {
+        left: 80%;
+    }
+       
+}
+
+@keyframes right {
+
+    0%{
+        right: 20%;
+    }
+
+    50% {
+        right: 60%;
+    }
+
+    100% {
+        right: 90%;
+    }
+}
+
+
+
+
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
