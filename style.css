@@ -198,25 +198,14 @@
         transform: rotate(220deg);
     }
 
-    75% {
+    70% {
         transform: rotate(260deg);
     }
 
     76% {
-        transform: rotate(260deg);
+        transform: rotate(280deg);
     }
 
-    80% {
-        transform: rotate(220deg);
-    }
-
-    90% {
-        transform: rotate(150deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
 
 }
 
