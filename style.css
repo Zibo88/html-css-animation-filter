@@ -149,7 +149,7 @@
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
     
 }
@@ -158,11 +158,15 @@
 /* ESERCIZIO 11 */
 .ex-11-icon {
     font-size: 60px;
-    transform: rotate();
+   
+    
+}
+
+.ex-11-icon:hover {
     animation-name: rotazione-2;
     animation-duration: 2s;
-    animation-timing-function: linear;
-    
+    animation-timing-function: ease-in;
+
 }
 
 @keyframes rotazione-2 {
@@ -246,11 +250,11 @@
     }
 
     50% {
-        left: 40%;
+        left: calc(100% - 60px);
     }
 
-    80% {
-        left: calc(100% - 30px);
+    100% {
+        left:10%;
     }
        
 }
@@ -262,11 +266,11 @@
     }
 
     50% {
-        right: 40%;
+        right: calc(100% - 60px);
     }
 
-    80% {
-        right: calc(100% - 30px);
+    100% {
+        right: 20%;
     }
 }
 
