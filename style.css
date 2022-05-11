@@ -134,7 +134,6 @@
 /* ESERCIZIO 10 */
 .ex-10-icon {
     font-size: 60px;
-    transform: rotate(0deg);
     animation: transform-spin;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -160,13 +159,13 @@
 .ex-11-icon {
     font-size: 60px;
     transform: rotate();
-    animation-name: transform;
+    animation-name: rotazione-2;
     animation-duration: 2s;
     animation-timing-function: linear;
     
 }
 
-@keyframes transform {
+@keyframes rotazione-2 {
 
     0% {
         transform: rotate(0deg);
@@ -198,13 +197,11 @@
         transform: rotate(220deg);
     }
 
-    70% {
+    75% {
         transform: rotate(260deg);
     }
 
-    76% {
-        transform: rotate(280deg);
-    }
+    
 
 
 }
@@ -249,11 +246,11 @@
     }
 
     50% {
-        left: 50%;
+        left: 40%;
     }
 
-    100% {
-        left: 80%;
+    80% {
+        left: calc(100% - 30px);
     }
        
 }
@@ -265,16 +262,13 @@
     }
 
     50% {
-        right: 60%;
+        right: 40%;
     }
 
-    100% {
-        right: 90%;
+    80% {
+        right: calc(100% - 30px);
     }
 }
-
-
-
 
 
 .ex-12-bottom-white, .ex-13-bottom-white {
